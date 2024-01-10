@@ -8,6 +8,9 @@ To analyze the **two lottery problems** and then publish an article in a scienti
 
 **Problem 2:** Is it possible to identify any bias in the lottery? If so, is it possible to generate a strategy that significantly increases the bettor's outcome?
 
+"Problem 1" is closely linked to the famous "Traveling Salesman Problem" and, also having a polynomial analytical solution, can shed light on the P vs NP problem.
+
+
 ## Motivation
 
 Since 2019, I have been studying Brazilian lotteries as a hobby, not with a predictive approach, but rather a deterministic one. The goal has always been to develop an algorithm that could generate a minimum number of bets in a game to guarantee that at least one bet would win at least a secondary prize.
