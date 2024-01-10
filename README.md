@@ -40,7 +40,7 @@ Among the lotteries mentioned above, **Lotofacil** was chosen for the following 
 
 **p-tuple:** a subset of p numbers from a bet
 
-**Complete *p-betting pool:*** a game that contains the minimum number of bets that ensure at least one bet will win at least a secondary prize that requires ***p*** numbers or more to be matched in at least one bet.
+**Complete *p-betting pool:*** a betting pool that contains the minimum number of bets that ensure at least one bet will win at least a secondary prize that requires ***p*** numbers or more to be matched.
 
 **Spread factor:** it is the probability that at least one bet in the game will win at least a secondary prize in a draw.
 
