@@ -5,9 +5,8 @@ import numpy as np
 
 LOTOFACIL_NUMBERS = np.arange(1, 25, dtype=int)
 
-class SingleBet:
+class SingleBet():
     """
-
     """
     def __init__(self, sequence):
         self._sequence = sequence
@@ -29,8 +28,10 @@ class SingleBet:
 
         """
         result_of_draw = 0
-        for number_of_draw in draw_result:
-                result_of_draw += 1
+        for number in self:
+            for number_2 in draw_result:
+                if number == number_2:
+                    result_of_draw += 1
         return result_of_draw
 
 
@@ -47,10 +48,10 @@ class SingleBet:
 # Unitary Test of Class SingleBet
 if __name__ == "__main__":
     # the most simple bet of the Lotofácil lottery
-    bet = SingleBet([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
+    bet = SingleBet(np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]))
     
     # the first draw of Lotofácil lottery in sept/29/2003
-    draw = SingleBet([2, 3, 5, 6, 9, 10, 11, 13, 14, 16, 18, 20, 23, 24, 25])
+    draw = SingleBet(np.array([1, 3, 5, 6, 9, 10, 11, 13, 14, 16, 18, 20, 23, 24, 25]))
     
     # print the
     print(bet.verify_draw(draw))
